@@ -81,12 +81,13 @@ void Model::processNode(aiNode *node, const aiScene *scene)
     MIN = MiddlePos.x;
     if (MiddlePos.y < MIN) MIN = MiddlePos.y;
     if (MiddlePos.z < MIN) MIN = MiddlePos.z;
-    //cout << "缩放比例: " << MIN << endl;
+    cout << "缩放比例: " << MIN << endl;
 
     MovePos.x = -(MaxPos.x + MinPos.x) / 2.0f * MIN;
     MovePos.y = -(MaxPos.y + MinPos.y) / 2.0f * MIN;
     MovePos.z = -(MaxPos.z + MinPos.z) / 2.0f * MIN;
 
+    cout << "MiddlePos.x:" << (MaxPos.x + MinPos.x) / 2.0f << "\tMiddlePos.y:" << (MaxPos.y + MinPos.y) / 2.0f << "\tMiddlePos.z:" << (MaxPos.z + MinPos.z) / 2.0f << endl;
     cout << "MovePos.x:" << MovePos.x << "\tMovePos.y:" << MovePos.y << "\tMovePos.z:" << MovePos.z << endl;
     cout << "meshes size: " << meshes.size() << endl << endl;
 }
