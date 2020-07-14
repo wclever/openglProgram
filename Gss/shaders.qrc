@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>shaders/axis.fsh</file>
+        <file>shaders/axis.gsh</file>
+        <file>shaders/axis.vsh</file>
+        <file>shaders/model.frag</file>
+        <file>shaders/model.vert</file>
+        <file>shaders/normal.fsh</file>
+        <file>shaders/normal.gsh</file>
+        <file>shaders/normal.vsh</file>
+        <file>shaders/texture.fsh</file>
+        <file>shaders/texture.vsh</file>
+    </qresource>
+</RCC>
